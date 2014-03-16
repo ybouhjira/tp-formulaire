@@ -1,0 +1,22 @@
+{
+  "name": "form",
+  "version": "0.0.0",
+  "authors": [
+    "ybouhjira <b.youssef91@gmail.com>"
+  ],
+  "description": "TP",
+  "main": "index.html",
+  "keywords": [
+    "form",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
+}

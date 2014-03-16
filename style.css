@@ -1,0 +1,49 @@
+
+h2 {
+  max-width: 400px;
+  background: blue;
+  color: white;
+  border-radius: 0 20px 20px  0;
+  box-shadow: 5px 5px 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 1px black;
+  padding: 2px;
+}
+
+fieldset {
+  box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.left-label {
+  display: inline-block;
+  width: 17%;
+}
+
+.left-label + input {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 79%;
+  padding: 0.5%;
+  margin: 0.5%;
+  -webkit-transition : box-shadow 300ms linear;
+  -moz-transition : box-shadow 300ms linear;
+  -ms-transition : box-shadow 300ms linear;
+  -o-transition : box-shadow 300ms linear;
+  transition : box-shadow 300ms linear;
+}
+
+.left-label + input:focus {
+  box-shadow: 0 0 0px 5px orange;
+}
+
+button, h2 {
+  background: blue;
+  color: white;
+}
+
+button {
+  border-radius: 10px;
+  padding: 5px 10px;
+  border: 1px solid black;
+  font-size: large;
+
+}

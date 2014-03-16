@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="validation.js"></script>
+</head>
+<body>
+  <form method="post" action="traitement.php" id="user-form" name="userForm">
+    <fieldset>
+      <legend>Un formulaire</legend>
+
+      <div>Veullez remplire tous les champs</div>
+
+      <h2>User information</h2>
+      <div>
+        <label class="left-label">Nom</label>
+        <input type="text" name="nom" required>
+      </div>
+      <div>
+        <label class="left-label">Prénom</label>
+        <input type="text" name="prenom" required>
+      </div>
+      <div>
+        <label class="left-label">Email</label>
+        <input type="email" name="email" required>
+      </div>
+      <div>
+        <label class="left-label">Tél</label>
+        <input type="tel" name="tel" required placeholder="(111)223344">
+      </div>
+
+      <h2>Publications</h2>
+      <div class="blue">Quel est le livre qui vous intéresse?</div>
+      <select name="livre" required>
+        <option value="xml">XML</option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+      </select>
+
+      <h2>Operating system</h2>
+      <div class="blue">Quel est votre système d'exploitation?</div>
+      <label><input type="radio" name="os" value="Linux" required checked>Linux</label>
+      <label><input type="radio" name="os" value="Windows">Windows</label>
+      <label><input type="radio" name="os" value="OSX">OSX</label>
+      <label><input type="radio" name="os" value="FreeBSD">FreeBSD</label>
+    </fieldset>
+    <button type="submit">Envoyer</button>
+  </form>
+</body>
+</html>
