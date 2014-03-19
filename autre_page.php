@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,13 +7,12 @@
   <link rel="stylesheet" type="text/css" href="table.css">
 </head>
 <body>
-  <h1>Données stockés dans la session</h1>
+  <h1>Données stockés dans la session (id : <?php echo session_id(); ?>)</h1>
   <table>
     <tr>
       <td>Champ</td>
       <td>Valeur</td>
     </tr>
-    <?php session_start();?>
     <?var_dump($_SESSION);?>
     <?php foreach ($_SESSION as $key => $value) : ?>
       <tr>
